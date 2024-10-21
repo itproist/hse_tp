@@ -1,0 +1,2 @@
+# Database
+Our project uses PostgreSQL as its database. This folder contains some scripts/files to initialize database and add some records to it. Further information will be added by the time, it'll have some content.
