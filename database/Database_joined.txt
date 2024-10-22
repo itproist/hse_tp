@@ -1,0 +1,3 @@
+SELECT dishes.dish_name, dishes.time, dishes.description, dishes.dish_quisine, dishes.recepy, ingredients.amount, products.name, products.measure_type FROM dishes
+JOIN ingredients ON ingredients.dish_id = dishes.dish_id 
+JOIN  products ON products.product_id = ingredients.product_id
