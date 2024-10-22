@@ -1,4 +1,4 @@
-CREATE TYPE quisine AS ENUM ('Russian', 'Italian', 'Spanish' ,'Japanise', 'Chainise');
+CREATE TYPE quisine AS ENUM ('Russian', 'Italian', 'Spanish' ,'Japanese', 'Chinese');
 CREATE TABLE Dishes
 	(dish_id BIGINT NOT NULL PRIMARY KEY,
 	dish_name text NOT NULL,
