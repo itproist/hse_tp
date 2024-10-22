@@ -20,5 +20,5 @@ CREATE TABLE Ingredients
 	product_id BIGINT NOT NULL,
 	amount BIGINT NOT NULL,
 
-	CONSTRAINT dish_id_fk FOREIGN KEY (dish_id) REFERENCES dishes
-	CONSTRAINT product_id_fk FOREIGN KEY (product_id) REFERENCES products)
+	CONSTRAINT dish_id_fk FOREIGN KEY (dish_id) REFERENCES dishes (dish_id)
+	CONSTRAINT product_id_fk FOREIGN KEY (product_id) REFERENCES products (product_id))
