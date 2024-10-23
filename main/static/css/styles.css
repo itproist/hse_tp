@@ -43,3 +43,12 @@ header button {
   color: #fff;
   border: none;
 }
+
+.dishes {
+text-align: center;
+}
+
+.dishes-heading {
+  padding-top: 100px;
+  padding-bottom: 15px;
+}

@@ -1,54 +1,25 @@
 {% extends "main/base.html" %}
 
+{% block title %} Smart Chef {% endblock %} 
 
-{% block title %} 
-Smart Chef
-{% endblock %} 
+{% block content %}
 
-{% block content %} 
-{% comment %} <h1>Main</h1>
+<div class="dishes">
 
-<div>
-    <h1>Transform Your Leftovers into Delicious Meals</h1>
-    <p>Welcome to our inovative chat-bot!
-         It efforlessly suggests delicious recipes1</p>
-    <a href="site.html">but</a>
-</div>
+    <h1 class="dishes-heading">Transform Your Leftovers <br> into Delicious Meals</h1>
 
-<div>
-    <p>Fresh</p>
-    <h2>Unlock the Potential of Your Ingredients</h2>
-    <p>Our chat-bot helps you make the most of what you have,
-        reducing food waste and saving you maney.
-        Discover exciting new recipes tailored to your fridge's contents ane elevate your cooking experience.
-    </p>
-</div>
+    <p>Welcome to our innovative chat-bot! It effotylessly suggests delicious recipes!</p>
+    <br>
+    <div>
+        <button>
+            Get Started
+        </button>
 
-<div>
-    <h2>FAQs</h2>
-    <p>Find answers to your questions about our innovative recipe chat-bot and its features.</p>
-    <div class="FAQ">
-        <p class="question"></p>
-        <p class="answer"></p>
+        <button>
+            Learn Mode
+        </button>
     </div>
+
 </div>
 
-<div>
-    <h3>Still have some questions?</h3>
-    <p>You can contact us...</p>
-</div>
-
-<div class="team">
-    <h2>Our Dream Team</h2>
-    <p>Passionate individuals dedicated to culinary innovation.</p>
-    <div class="person">
-        <p class="name"></p>
-        <p class="appointment"></p>
-        <p class="more details"></p>
-    </div>
-</div> {% endcomment %}
-
-
-{% endblock %} 
-
-
+{% endblock %}
