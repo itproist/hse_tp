@@ -27,7 +27,7 @@ WHERE products.name IN ({str(products)[1:-1]});""")
 SELECT dishes.dish_name, dishes.recepy, dishes.time FROM dishes 
 WHERE dishes.dish_id = {id};""")
         record = cursor.fetchall()
-        result += [{'name': record[0][0], 'recipy': record[0][1], 'time': str(record[0][2])}]
+        result += [{'name': record[0][0], 'recipe': record[0][1], 'time': str(record[0][2])}]
 
     cursor.close()
     connection.close()
