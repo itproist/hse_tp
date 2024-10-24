@@ -1,24 +1,23 @@
-CREATE TYPE quisine AS ENUM ('Русская', 'Итальянская', 'Испанская' ,'Японская', 'Китайская');
+CREATE TYPE quisine AS ENUM ('Russian', 'Italian', 'Spanish' , 'Japan', 'Chinese');
 CREATE TABLE Dishes
-  (dish_id BIGINT NOT NULL PRIMARY KEY,
+  (dish_id INTEGER NOT NULL PRIMARY KEY,
   dish_name text NOT NULL,
   time interval,
   dish_quisine quisine,
   recepy text NOT NULL);
 
 
-CREATE TYPE measure AS ENUM ('мл', 'гр',  'шт');
+CREATE TYPE measure AS ENUM ('gr', 'ml', 'pcs');
 CREATE TABLE Products 
-  (product_id BIGINT NOT NULL PRIMARY KEY,
-  measure_type measure,  
+  (product_id INTEGER NOT NULL PRIMARY KEY,
+  measure_type measure NOT NULL,  
   name text NOT NULL);
 
 
 CREATE TABLE Ingredients
-  (ingredient_id BIGINT NOT NULL PRIMARY KEY,
-  dish_id BIGINT NOT NULL,
-  product_id BIGINT NOT NULL,
-  amount BIGINT,
-
+  (ingredient_id INTEGER NOT NULL PRIMARY KEY,
+  dish_id INTEGER NOT NULL,
+  product_id INTEGER NOT NULL,
+  amount INTEGER,
   CONSTRAINT dish_id_fk FOREIGN KEY (dish_id) REFERENCES dishes (dish_id),
-  CONSTRAINT product_id_fk FOREIGN KEY (product_id) REFERENCES products (product_id))
+  CONSTRAINT product_id_fk FOREIGN KEY (product_id) REFERENCES products (product_id));
