@@ -24,8 +24,8 @@ removeButton.addEventListener('click', () => {
 });
 
 sendButton.addEventListener('click', () => { // Обработчик для кнопки "Отправить"
-  fetch('/api/recipy', {
-    method: 'GET',
+  fetch('/api/recipe', {
+    method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
@@ -48,8 +48,9 @@ function updateIngredientList() {
   }
 }
 
-function displayRecipes(recipes) { // Функция для вывода рецептов
-  recipesDiv.textContent = ''; // Очищаем предыдущие рецепты
+function displayRecipes(recipes) { 
+  const recipesDiv = document.getElementById('recipes'); 
+  recipesDiv.textContent = ''; 
 
   if (recipes.length > 0) {
     const recipeList = document.createElement('ul');
