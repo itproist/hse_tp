@@ -233,3 +233,16 @@ color: black;
   justify-content: space-between;
   padding-left: 700px;
 }
+
+ #send-button {
+    background-color: purple;
+    padding: 10px 20px;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
