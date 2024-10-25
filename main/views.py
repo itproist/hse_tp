@@ -10,5 +10,9 @@ def index(request):
     return render(request, "main/index.html")
 
 
+def add(request):
+    return render(request, "main/add.html") 
+
+
 def get_recipy(request: HttpRequest):
     return HttpResponse(find_dishes(json.loads(request.body)))

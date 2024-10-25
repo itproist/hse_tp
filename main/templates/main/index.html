@@ -1,12 +1,291 @@
 {% extends "main/base.html" %}
+{% load static %}
+
+{% block title %} Smart Chef {% endblock %} 
+
+{% block content %}
+
+<div class="dishes">
+
+    <h1 class="dishes-heading">Transform Your Leftovers <br> into Delicious Meals</h1>
+
+    <p>Welcome to our innovative chat-bot! It effotylessly suggests delicious recipes!</p>
+    <br>
+    <div class="dishes-button">
+        <button class="dishes-button left">
+            Get Started
+        </button>
+
+       <button class="dishes-button right">
+            Learn Mode
+        </button>
+    </div>
+
+</div>
+
+<div class="dishes-dishes">
+    <div>
+        <img width="450px" height="280px" src={% static 'images/1.jpg' %} alt="1">
+    </div>
+    <div>
+        <img width="450px" height="280px" src={% static 'images/2.jpg' %} alt="2">
+    </div>
+    <div>
+        <img width="450px" height="280px" src={% static 'images/4.jpg' %} alt="4">
+    </div>
+    <div>
+        <img width="450px" height="280px" src={% static 'images/4.jpg' %} alt="4">
+    </div>
+    <div>
+        <img  width="450px" height="280px" src={% static 'images/5.jpg' %} alt="5">
+    </div>
+    <div>
+        <img width="450px" height="280px" src={% static 'images/6.jpg' %} alt="6">
+    </div>
+</div>
+
+<div class="dishes-unlock">
+    <div class="unlock-block">
+        <p class="unlock">Flesh</p>
+        <h2 class="unlock-h2">Unlock the Potential of <br> Your Ingredients</h2>
+    
+        <p class="unlock-p">
+            Our chat-bot hepls you make the most of what you have, reducing food <br>
+            waste and saving you money. Discover exciting new recipes tailored to your <br>
+            fridge's contents and elevate your cooking  experience. 
+        </p>
+        
+        <div class="unlock-button">
+            <button class="unlock-button left">Explore</button>
+            <button class="unlock-button right">Get Started</button>
+        </div>
+    
+    </div>
+
+    <div>
+        <img width="650px" height="480px" src={% static 'images/1.jpg' %} alt="1">
+    </div>
+</div>
+
+<div class="faqs">
+    <br>
+    <br>
+    <br>
+    <h2>FAQs</h2>
+    <br>
+    <br>
+    <p>Find answers to your questionts about our innovative recipe chat-bot and its features.</p>
+    <br>
+    <div class="faqs-block">
+        <br>
+        <h3>How does it work?</h3>
+        <br>
+        <p>Our chat-bot uses artificial intelligence to analyze the ingredients you have. Simply input what's in <br>
+        your frigde, and it will suggest delliious recipes tailored to those items. It's like having a personal chef <br>
+        at your fingestips.    
+        </p>
+        <br>
+    </div>
+    <br>
+    <div class="faqs-block">
+        <br>
+        <h3>What can it do?</h3>
+        <br>
+        <p>
+        The chat-bot can recommend recipes based on the ingredients you provide. It also offers cooking tips <br>
+        and alternatives for missing items. With endless culinary possibilities, it helps reduce food waste and <br>
+        inspires creativity in the kitchen.
+        </p>
+        <br>
+    </div>
+    <br>
+    <div class="faqs-block">
+    <br>
+        <h3>Is it user-friendly?</h3>
+       <br>
+        <p>
+        Absolutely! The interface is designed to be intuitive and easy to navigate. You can quickly start a  <br>
+        conversation and receive recipe suggestions within moments. It's perfect for both novice cooks and <br>
+        seasoned chefs,
+        </p>
+        <br>
+    </div>
+    <br>
+    <div class="faqs-block">
+    <br>
+        <h3>Can I save recipes?</h3>
+        <br>
+        <p>Yes, you can save your favourite recipes for easy access later. The chat-bot allows you to create a <br>
+            personal recipe collection, This feature makes meal planning and preparation even more convenient.</p>
+    <br>
+        </div>
+    <br>
+    <div class="faqs-block">
+    <br>    
+    <h3>Is it free to use?</h3>
+
+        <br>
+        <p>
+            Yes, our chat-bot is free to use! You can access all its features without any charges. We believe in <br>
+            making cooking accessible and enjoyable for everyone. 
+        </p>
+        <br>
+    </div>
+</div>
+
+<div class="still">
+    <br><br><br>
+    <h2>Still have questions?</h2><br>
+    <p>We're here to help you with any </p>
+    <br><br>
+    <button>
+        Contact
+    </button>
+</div>
+
+<div class="dreamteam">
+    <br>
+    <br><br><br>
+    <br>
+    <br>
+    <h2>Our Dream Team</h2>
+    <br>
+    <p>Passionate individuals dedicated to culinary innavation.</p>
+    <br>
+    <br>
+    <br>
+
+    <div class="dredredre">
+        <div class="dreamteam-user">
+            <div>
+                <img width="80px" height="80px" src={% static 'images/1.jpg' %} alt="1">
+            </div>
+            <br>
+            <span>Ilya<br>
+            Frontend-developer
+            </span><br><br>
+            <p>We live for life and for food :)</p>
+        </div>
+        
+        <div class="dreamteam-user">
+            <div>
+                <img width="80px" height="80px" src={% static 'images/1.jpg' %} alt="1">
+            </div>
+            <br>
+            <span>Margaret<br>
+            Designer, Backend-developer
+            </span><br><br>
+            <p>Innovating technology to enhance  your <br> cooking experience. </p>
+        </div>
+
+        <div class="dreamteam-user">
+            <div>
+                <img width="80px" height="80px" src={% static 'images/1.jpg' %} alt="1">
+            </div>
+            <br>
+            <span>Max<br>
+            Frontend-developer
+            </span><br><br>
+            <p>Connecting with food lovers  to share our <br> passion.</p>
+        </div>
+
+        <div class="dreamteam-user">
+            <div>
+                <img width="80px" height="80px" src={% static 'images/1.jpg' %} alt="1">
+            </div>
+            <br>
+            <span>Dima cool<br>
+            Backend-developer
+            </span><br><br>
+            <p>Crafting engaging content that brings <br>  recipes to life.</p>
+        </div>
+
+        <div class="dreamteam-user">
+            <div>
+                <img width="80px" height="80px" src={% static 'images/1.jpg' %} alt="1">
+            </div>
+            <br>
+            <span>Dima Kras<br>
+            DB-developer
+            </span><br><br>
+            <p>Designing intutive experiences that make <br> cooking enjoyable.</p>
+        </div>
+
+        <div class="dreamteam-user">
+            <div>
+                <img width="80px" height="80px" src={% static 'images/1.jpg' %} alt="1">
+            </div>
+            <br>
+            <span>Alina<br>
+            Backend-developer
+            </span><br><br>
+            <p>Analysing data to improve our recipe <br> recommendations.</p>
+        </div>
+
+        <div class="dreamteam-user">
+            <div>
+                <img width="80px" height="80px" src={% static 'images/1.jpg' %} alt="1">
+            </div>
+            <br>
+            <span>Seva<br>
+            Backend-developer
+            </span><br><br>
+            <p>Here to assist you with all your cooking <br> queries. </b></p>
+        </div>
+
+        <div class="dreamteam-user">
+            <div>
+                <img width="80px" height="80px" src={% static 'images/1.jpg' %} alt="1">
+            </div>
+            <br>
+            <span>Andrew<br>
+            DB-developer
+            </span><br><br>
+            <p>Be part of our innovative team and make a difference.</p>
+        </div>
+
+        <div class="dreamteam-user">
+            <div>
+                <img width="80px" height="80px" src={% static 'images/1.jpg' %} alt="1">
+            </div>
+            <br>
+            <span>Pavel<br>
+            Frontend-developer
+            </span><br><br>
+            <p>Be part of our innovative team and make <br>a difference.</p>
+        </div>
+
+        <div class="dreamteam-user">
+            <div>
+                <img width="80px" height="80px" src={% static 'images/1.jpg' %} alt="1">
+            </div>
+            <br>
+            <span>Vlad<br>
+            Backend-developer
+            </span><br><br>
+            <p>
+            Lorem ipsum dolor sit amet
+            </p>
+        </div>
+    </div>
+    
 
 
-{% block title %} 
-Main
-{% endblock %} 
-
-{% block content %} 
-<h1>Main</h1>
-{% endblock %} 
 
 
+
+
+
+
+</div>
+
+<div class="seeyou">
+    <br><br><br>
+    <h2>We're glad to see you!</h2>
+    <br>
+    <p>Explore exciting career opportintities with us.</p>
+    <br><br>
+    <button>Open Positions</button> 
+</div>
+
+{% endblock %}
